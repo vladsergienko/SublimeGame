@@ -1,0 +1,172 @@
+/* Адаптивность */
+
+/* Большие девайсы (>= 992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+/*  Средние девайсы (>= 768px)  */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about-title{
+        font-size: 30px;
+    }
+    .content-image {
+        width: 35%;
+        overflow: hidden;
+    }
+    .team-block-inner {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    .blogin-right {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }   
+}
+
+
+/*  Малые девайсы (>= 575px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .about-title{
+        font-size: 30px;
+    }
+    .content-image {
+        width: 50%;
+        overflow: hidden;
+    }
+    .blog-item {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog-item-image, .blog-item-title {
+        width: 80%;
+        padding: 10px 10px;
+    }
+    .services-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .team-block-inner {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    .blogin-right {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* Экстрамалые девайсы (< 576px) */
+@media (max-width: 575.98px) {
+    .header-menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-title{
+        font-size: 30px;
+    }
+    .about-article{
+        margin-left: 0; 
+    }
+    .about-development{
+        width: 100%;
+        max-width: 100%;
+    }
+    .projects-title {
+        color: black;
+        font-size: 30px;
+    }
+    ol, ul {
+        padding-left: 0;
+    }
+    .projects-menu {
+        padding: 20px 0;
+        max-width: 400px;
+    }
+    .projects-menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .content-image {
+        width: 70%;
+        overflow: hidden;
+    }
+    .blog-item {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog-item-image, .blog-item-title {
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .team-block-inner {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+    .team-content {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .team-block {
+        margin-left: 0;
+    }
+    .testimonials-content {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+    }
+    .blogin-right {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .blogin-content {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .footer-maps {
+        position: relative;
+        width: 100%;
+    }
+    .icon-map {
+        position: absolute;
+        top: 300px;
+        left: 150px;
+        width: 50px;
+        height: 50px;
+    }
+    .footer-form {
+        padding: 50px;
+        width: 100%;
+        background-color: #2046b3;
+    }
+    .info {
+        margin: 20px;
+        color: #fff;
+        font-size: 14px;
+    }
+}

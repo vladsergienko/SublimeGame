@@ -1,0 +1,488 @@
+/*подключение шрифтов директивой @font-face*/
+
+@font-face{
+   font-family: MyriadPro;
+   src: url('../fonts/MyriadPro.woff');
+  }
+@font-face{
+   font-family: MyriadPro-Regular;
+   src: url('../fonts/MyriadPro-Regular.woff');
+  }
+@font-face{
+   font-family: MyriadPro-Semibold;
+   src: url('../fonts/MyriadPro-Semibold.woff');
+  }
+
+/* Общие стили */
+
+html, body{
+   height: 100%;
+}
+*,*::before, *::after{
+   box-sizing: border-box;
+ } 
+ * {
+   margin: 0;
+   padding: 0;
+ }
+ body{
+   font-family: 'MyriadPro', sans-serif;
+   background-color: #fff;
+   margin: 0;
+   padding: 0;
+ }
+ nav ul{
+    list-style: none;
+    margin: 0;
+ }
+ nav a{
+   display: block;
+   border-radius: 30%;
+   text-decoration: none;
+   color: #969696;
+ }
+ h1{
+   font-size: 30px;
+   color: #fff;
+   font-weight: 700;
+ }
+ h2{
+   font-size: 30px;
+   color: #FF7000;
+ }
+ .wrapper{
+   min-height: 100%;
+ }
+ .container{
+   width: 100%;
+   max-width: 1180px;
+   margin: 0 auto  ;
+ }
+
+ /* Секция Header */
+
+ .header{
+   min-height: 100%;
+   background: url(../img/bg1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ .header-title span{
+   color: #ffc600;
+ }
+ .header-title {
+   padding-top: 40px;
+   font-family: 'MyriadPro-Semibold';
+   font-size: 60px;
+   line-height: 55px;
+   color: #fff;
+}
+ .header-menu a{
+   color: #ffc600;
+   font-family: 'MyriadPro-Regular';
+   font-size: 18px;
+ }
+ .header-menu a:hover{
+   transition: all .1s ease;
+   color: #fff;
+   text-decoration: underline;
+ }
+ .header-menu{
+   padding-top: 40px;
+   max-width: 400px;
+ }
+ .header-menu ul{
+   display: flex;
+   justify-content: space-between;
+ }
+
+/* Секция About */
+
+.about-content{
+   padding: 50px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.about-title{
+   color: black;
+   font-size: 80px;
+}
+.about-title span{
+   color: #ffc600;
+}
+.about-article{
+   border-left: 2px solid grey;
+   margin-left: 70px;
+   padding-left: 30px;
+}  
+.about-development{
+   width: 100%;
+   max-width: 33.3%;
+   text-align: center;
+}
+.about-development h4{
+   padding: 10px 0;  
+}
+.about-development p:last-child{
+   margin-bottom: 50px;
+}
+
+/* Секция Projects */
+
+.projects-title{
+   color: black;
+   font-size: 39px;
+}
+.projects-title span{
+   color: #ffc600;
+}
+.projects-menu{
+   padding: 40px 0;
+   max-width: 400px;
+}
+.projects-menu ul{
+   display: flex;
+   justify-content: space-between;
+}
+.projects-menu a{
+   color: black;
+   font-family: 'MyriadPro-Regular';
+   font-size: 18px;
+}
+.projects-menu a:hover{    
+   transition: all .1s ease ;
+   color: #ffc600;
+   text-decoration: underline;
+}
+.projects-content{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.content-image{
+   width: 25%;
+   overflow: hidden;
+}
+.content-image img{
+   height: 250px;
+   width: auto;
+}
+
+/* Секция Process */
+
+.process{
+   padding: 40px 0;
+}
+.process-title{
+   color: black;
+   font-size: 39px;
+   margin-bottom: 30px;
+}
+.process-title span{
+   color: #ffc600;
+}
+.process-blog{
+   padding: 50px 0;
+}  
+.blog-item{
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.blog-item-image,
+.blog-item-title{
+   width: 40%;
+   padding: 0 10px;
+}
+.blog-item-image{
+   overflow: hidden;
+}
+.blog-item-image img {
+   width: 100%;
+   height: auto;
+}
+
+/* Секция Services */
+
+.services{
+   padding: 70px 0;
+   min-height: 700px;
+   background: linear-gradient(
+      to left,
+      rgba(12, 33, 90, 0.8),
+      rgba(119, 8, 54, 0.651)
+  ),url(../img/bgfull.png);      
+   background-repeat: no-repeat;
+   background-size: cover;  
+}
+.services-title{
+   color: #fff ;
+   font-size: 39px;
+   margin-bottom: 30px;
+}
+.services-title span{
+   color: #ffc600;
+}
+.services-content{
+   display: flex;
+   justify-content: flex-end;
+   flex-wrap: wrap;
+}
+.services-block{
+   width: 100%;
+   max-width: 400px;
+   margin: 20px;
+}
+.services-block h4{
+   font-size: 20px;
+   color: #fff;
+   margin-bottom: 40px;
+}
+.services-block p{
+   color: #fff;
+   font-size: 16px;
+}
+
+/* Секция Team */
+
+.team{
+   padding: 70px 0;
+}
+.team-title{
+   color: black;
+   font-size: 39px;
+   margin-bottom: 30px;
+}
+.team-title span{
+   color: #ffc600;
+}
+.team-block{
+   margin-left: 50px;
+}
+.title-block{
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+.team-content{
+   display: flex;
+   justify-content: start;
+}
+.team-block-inner{
+   display: flex;
+   justify-content: start;
+}
+.team-block-inner{
+   padding: 20px 0;
+   width: 100%;
+}
+.team-people{
+   margin-right: 10px;
+}
+.team-people h5{
+   font-size: 20px;
+   font-weight: 700;
+}
+.people-content-img{
+   margin-bottom: 20px;
+   width: 200px;
+   height: 170px;
+   overflow: hidden;
+}
+.img-bg1{
+   background: url('../img/people1.png');
+   background-position: right;
+}
+.img-bg2{
+   background: url('../img/people2.png');
+   background-position: right;
+}
+.img-bg3{
+   background: url('../img/people3.png');
+   background-position: right;
+}
+.img-bg4{
+   background: url('../img/people4.png');
+   background-position: right;
+}
+
+/* Секция Testimonials */
+
+.testimonials{
+   padding: 70px 0;
+   background-color: black;
+}
+.testimonials-content{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+}
+.testimonials-title{
+   color: #fff ;
+   font-size: 39px;
+   margin-bottom: 30px;
+}
+.testimonials-title span{
+   color: #ffc600;
+}
+.testimonials-desc{
+   width: 70%;
+   color: #fff;
+   margin-right: 30px;
+}
+.testimonials-desc p{
+   margin: 10px 0;
+   color: #fff;
+}
+.testimonials-people{
+   text-align: center;
+   color: #fff;
+}
+.team-people h5{
+   font-size: 20px;
+   font-weight: 700;
+}
+.testimonials-content-img{
+   border: 5px solid #ee9219;
+   margin-bottom: 20px;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.img-bg5{
+   background: url('../img/people5.png');
+   background-position: right;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+/* Секция Blogin */
+.blogin{
+   padding: 70px 0;
+}
+.blogin-content{
+   display: flex;
+   justify-content: start;
+}
+.blogin-left{
+   width: 100%;
+   max-width: 300px;
+}
+.blogin-right{
+   display: flex;
+   justify-content: end;
+}
+.blogin-posts{
+   margin-right: 40px;
+}
+.blogin-posts span{
+   color: #ffc600;
+}
+.blogin-posts h5{
+   font-size: 18px;
+   margin: 10px 0;
+}
+.blogin-title{
+   color: black;
+   font-size: 39px;
+   margin-bottom: 30px;
+}
+.blogin-title span{
+   color: #ffc600;
+}
+.blogin-content-img{  
+   margin-bottom: 20px;
+   width: 200px;
+   height: 200px;
+   overflow: hidden;
+}
+.img-bg{ 
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.img-bg6{
+   background: url('../img/posts1.png');
+}
+.img-bg7{
+   background: url('../img/posts2.png');
+}
+.img-bg8{
+   background: url('../img/posts3.png');
+}
+.blogin-nav ul {
+   font-size: 20px;
+}
+.blogin-nav ul li {
+   padding: 10px 0;
+}
+.active{
+   color: #ffc600;
+}
+
+/* Секция Footer */
+.footer-content{
+   display: flex;
+   justify-content: start;
+}
+.footer-maps{
+   position: relative;
+   width: 50%;
+}
+.icon-map{
+   position: absolute; /*Позиционирование маркера на карте*/
+   top: 300px;
+   left: 350px;
+   width: 50px;
+   height: 50px;
+}
+iframe { 
+   pointer-events: none; /* запрет скроллить гугл карту */
+}
+.footer-title{
+   color: #fff;
+   font-size: 39px;
+   margin-bottom: 30px;
+}
+.footer-title span{
+   color: #ffc600;
+}
+.footer-form{
+   padding: 50px;
+   width: 50%;
+   background-color: #2046b3;
+}
+.group-inner{
+   display: flex;
+   justify-content: space-between;
+}
+#inputMess{
+   height: 100px;
+}
+.form-group input{
+   background: transparent;
+   border: 2px solid #ffc600;
+   color: #fff;
+}
+.form-group input::placeholder{
+   color: #fff;
+}
+button[type=submit]{
+   margin-top: 30px;
+}
+.location{
+   padding: 30px 0;
+   border-bottom: 1px solid #fff;
+}
+.info{
+   margin: 20px;
+   color: #fff;
+}
+.social{
+   margin-top: 10px;
+}
+.social a{
+   margin: 5px;
+}
